@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧾 Nuvei Integration – Next.js + TailwindCSS
 
-## Getting Started
+> 🚀 Proyecto de integración con Nuvei utilizando **Next.js**, **TailwindCSS** y **Bun**.  
+> Este repositorio permite procesar pagos mediante la plataforma Nuvei con un flujo seguro y escalable.
 
-First, run the development server:
+---
+
+## 🖼️ Vista previa del proyecto
+
+_Agrega aquí la URL de una imagen o screenshot del proyecto_
+
+`👉 [Pon aquí la URL de la imagen]`
+
+---
+
+## 📌 Descripción
+
+_Describe aquí tu proyecto, propósito y beneficios_
+
+`👉 [Agrega una breve descripción del proyecto]`
+
+---
+
+## 🔧 Tecnologías utilizadas
+
+| Tecnología       | Uso                                          |
+| ---------------- | -------------------------------------------- |
+| **Next.js**      | Framework React para el frontend y backend   |
+| **TailwindCSS**  | Estilos con clases utilitarias               |
+| **Nuvei**        | Plataforma de pagos                          |
+| **Bun**          | Runtime para ejecutar el proyecto más rápido |
+| **DevContainer** | Entorno de desarrollo reproducible           |
+
+---
+
+## 🚀 Requisitos previos
+
+🔹 Tener instalado **Docker** (para usar el DevContainer)  
+🔹 Tener instalado **Bun** localmente si vas a ejecutar sin DevContainer  
+🔹 Claves de integración de **Nuvei**
+
+---
+
+## 🔑 Variables de entorno necesarias
+
+Crea un archivo `.env.local` en la raíz del proyecto con lo siguiente:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+NEXT_PUBLIC_NUVEI_ENV="stg" # prod
+NEXT_PUBLIC_NUVEI_APPLICATION_CODE=""
+NEXT_PUBLIC_NUVEI_APPLICATION_KEY=""
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📥 Instalación de dependencias
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🟢 Usando Bun (recomendado)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun install
+```
 
-## Learn More
+🔵 Usando npm (opcional)
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🟣 Usando yarn (opcional)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+yarn install
+```
 
-## Deploy on Vercel
+⚠️ Si usas Bun, no mezcles gestores (npm/yarn) en el mismo proyecto para evitar conflictos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ▶️ Ejecutar en local sin DevContainer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+bun run dev
+```
+
+Luego abre en el navegador:
+
+```bash
+http://localhost:3000
+```
